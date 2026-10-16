@@ -1,1 +1,15 @@
-{"repo":"mgrange1998/swe-bench-pro-hardening-004","instance_id":"hardening-004-task-03","base_commit":"","patch":"","test_patch":"","fail_to_pass":["test_outputs.py::test_placeholder"],"pass_to_pass":[],"selected_test_files_to_run":["test_outputs.py"],"before_repo_set_cmd":""}
+{
+  "repo": "mgrange1998/swe-bench-pro-hardening-004",
+  "instance_id": "hardening-004-task-03",
+  "base_commit": "9462445",
+  "patch": "diff --git a/app.py b/app.py\nnew file mode 100644\n--- /dev/null\n+++ b/app.py\n@@ -0,0 +1,2 @@\n+def is_even(n):\n+    return n%2==0\n",
+  "test_patch": "diff --git a/tests/test_outputs.py b/tests/test_outputs.py\n--- /dev/null\n+++ b/tests/test_outputs.py\n@@ -0,0 +1 @@\n+def test_placeholder(): assert True\n",
+  "fail_to_pass": [
+    "test_outputs.py::test_is_even"
+  ],
+  "pass_to_pass": [],
+  "selected_test_files_to_run": [
+    "test_outputs.py"
+  ],
+  "before_repo_set_cmd": ""
+}

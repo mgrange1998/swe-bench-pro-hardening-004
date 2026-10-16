@@ -21,6 +21,8 @@ category = "feature"
 languages = ["python"]
 tags = ["semi-synthetic-evolution", "generator:repogen-hardening-6000", "repogen-hardening-6000", "swe-bench-pro", "semi-synthetic"]
 reward_type = "binary"
+category_subdomain = "backend_services"
+category_usecase = "extend_behavior"
 
 [synthetic_pipeline_metadata]
 pipeline_name = "repogen-hardening-6000"
