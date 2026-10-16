@@ -1,0 +1,49 @@
+schema_version = "1.1"
+version = "1.0"
+
+[task]
+name = "mgrange1998/hardening-004-task-01"
+format = "swe_bench_single_turn"
+workstream = "swe_public_repo"
+track_assignment = "swe-bench-external-repos"
+description = "Derisk task 1: Implement add(a,b) returning a+b in app.py"
+keywords = ["python", "semi-synthetic-evolution"]
+
+[[task.authors]]
+name = "Matthew Grange"
+email = "mgrange@meta.com"
+
+[metadata]
+author_name = "Matthew Grange"
+author_email = "mgrange@meta.com"
+difficulty = "easy"
+category = "feature"
+languages = ["python"]
+tags = ["semi-synthetic-evolution", "generator:repogen-hardening-6000", "repogen-hardening-6000", "swe-bench-pro", "semi-synthetic"]
+reward_type = "binary"
+
+[synthetic_pipeline_metadata]
+pipeline_name = "repogen-hardening-6000"
+generator = "repogen-hardening-6000"
+source = "repogen-hardening-6000"
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []
+
+[verifier.env]
+
+[environment.env]
+
+[solution.env]
